@@ -1,11 +1,9 @@
 import os
 import allure
-from selenium import webdriver
-from selenium.webdriver.chrome.service import Service
-from webdriver_manager.chrome import ChromeDriverManager
 from selene import browser, have
 
-def test_student_registration_form():
+def test_student_registration_form(setup_browser):
+ browser = setup_browser
  open_registration_forme()
  filling_name()
  filling_email()
