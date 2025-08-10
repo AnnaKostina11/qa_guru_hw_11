@@ -4,7 +4,7 @@ from selene import browser, have
 
 def test_student_registration_form(setup_browser):
  browser = setup_browser
- browser.driver.set_window_size(1920, 1080)
+ browser.driver.set_window_size(1920, 2000)
  open_registration_forme(browser)
  filling_name(browser)
  filling_email(browser)
