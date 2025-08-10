@@ -23,7 +23,7 @@ def test_student_registration_form(setup_browser):
 
 
 @allure.step("Открываем форму")
-def open_registration_forme(_browser):
+def open_registration_forme():
  browser.open('https://demoqa.com/automation-practice-form')
 
 # заполнение Name: поля First Name и Last Name
