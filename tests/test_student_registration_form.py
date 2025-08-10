@@ -9,7 +9,7 @@ def test_student_registration_form(setup_browser):
     filling_email(_browser, email='111name@example.com')
     filling_gender(_browser, gender='Female')
     filling_mobile(_browser, mobile='8788888888')
-    filling_date(_browser, date='30 July,2023')  # Исправлена дата
+    filling_date(_browser, date='30 July,2023') 
     filling_subjects(_browser, subject='Computer Science')
     filling_hobbies(_browser, hobbies='Reading, Music')
     filling_picture(_browser, filename='tests/test.jpg')
