@@ -24,6 +24,9 @@ def setup_browser(request):
     )
 
     browser = Browser(Config(driver=driver))
+
+    browser.driver.set_window_size(1920, 2000)
+
     yield browser
 
     attach.add_screenshot(browser)
